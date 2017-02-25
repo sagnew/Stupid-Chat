@@ -219,7 +219,7 @@ var twiliochat = (function() {
     rowDiv.loadTemplate($('#message-template'), {
       username: message.author,
       date: dateFormatter.getTodayDate(message.timestamp),
-      body: message.body
+      body: ' tried to send a message, but failed.'
     });
     if (message.author === tc.username) {
       rowDiv.addClass('own-message');
